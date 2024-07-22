@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Estrés</h2>
+        <span class="toggle" aria-label="Menú de navegación"><i class="fa-solid fa-bars"></i></span>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Test de Estrés</h1>
+        <form id="stressForm">
+            <h2>Estresores</h2>
+            <!--Pregunta 1-->
+            <div class="question">
+                <p>1. ¿Qué tan frecuentemente sientes presión por cumplir con tus deberes academicos?</p>
+                <label><input type="radio" name="question1" value="1"> Nunca</label>
+                <label><input type="radio" name="question1" value="2"> Raramente</label>
+                <label><input type="radio" name="question1" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question1" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question1" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 2-->
+            <div class="question">
+                <p>2. ¿Qué tan frecuentemente te sientes abrumado(a) por la carga de tareas escolares?</p>
+                <label><input type="radio" name="question2" value="1"> Nunca</label>
+                <label><input type="radio" name="question2" value="2"> Raramente</label>
+                <label><input type="radio" name="question2" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question2" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question2" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 3-->
+            <div class="question">
+                <p>3. ¿Con qué frecuencia te sientes preocupado(a) por tus calificaciones?</p>
+                <label><input type="radio" name="question3" value="1"> Nunca</label>
+                <label><input type="radio" name="question3" value="2"> Raramente</label>
+                <label><input type="radio" name="question3" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question3" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question3" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 4-->
+            <div>
+                <p>4. ¿Qué tan frecuentemente te sientes presionado(a) por los exámenes y evaluaciones?</p>
+                <label><input type="radio" name="question4" value="1"> Nunca</label>
+                <label><input type="radio" name="question4" value="2"> Raramente</label>
+                <label><input type="radio" name="question4" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question4" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question4" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 5-->
+            <div>
+                <p>5. ¿Qué tan a menudo sientes que el tiempo no es suficiente para cumplir con todas tus responsabilidades académicas?</p>
+                <label><input type="radio" name="question5" value="1"> Nunca</label>
+                <label><input type="radio" name="question5" value="2"> Raramente</label>
+                <label><input type="radio" name="question5" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question5" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question5" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 6-->
+            <div>
+                <p>6. ¿Qué tan frecuentemente sientes que los trabajos en grupo te generan estrés?</p>
+                <label><input type="radio" name="question6" value="1"> Nunca</label>
+                <label><input type="radio" name="question6" value="2"> Raramente</label>
+                <label><input type="radio" name="question6" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question6" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question6" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 7-->
+            <div>
+                <p>7. ¿Qué tan a menudo te sientes ansioso(a) por tus responsabilidades académicas fuera del aula?</p>
+                <label><input type="radio" name="question7" value="1"> Nunca</label>
+                <label><input type="radio" name="question7" value="2"> Raramente</label>
+                <label><input type="radio" name="question7" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question7" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question7" value="5"> Siempre</label>
+            </div>
+
+            <h2>Sintomas</h2>
+            <!--Pregunta 8-->
+            <div>
+                <p>8. ¿Con qué frecuencia sientes agotamiento físico o mental debido a tus estudios?</p>
+                <label><input type="radio" name="question8" value="1"> Nunca</label>
+                <label><input type="radio" name="question8" value="2"> Raramente</label>
+                <label><input type="radio" name="question8" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question8" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question8" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 9-->
+            <div>
+                <p>9. ¿Qué tan frecuentemente tienes dificultades para concentrarte en tus estudios?</p>
+                <label><input type="radio" name="question9" value="1"> Nunca</label>
+                <label><input type="radio" name="question9" value="2"> Raramente</label>
+                <label><input type="radio" name="question9" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question9" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question9" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 10-->
+            <div>
+                <p>10. ¿Con qué frecuencia experimentas dolores de cabeza relacionados con el estrés académico?</p>
+                <label><input type="radio" name="question10" value="1"> Nunca</label>
+                <label><input type="radio" name="question10" value="2"> Raramente</label>
+                <label><input type="radio" name="question10" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question10" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question10" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 11-->
+            <div>
+                <p>11. ¿Qué tan a menudo tienes problemas para dormir debido a preocupaciones académicas?</p>
+                <label><input type="radio" name="question11" value="1"> Nunca</label>
+                <label><input type="radio" name="question11" value="2"> Raramente</label>
+                <label><input type="radio" name="question11" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question11" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question11" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 12-->
+            <div>
+                <p>12. ¿Qué tan frecuentemente sientes cambios en tu apetito debido al estrés escolar?</p>
+                <label><input type="radio" name="question12" value="1"> Nunca</label>
+                <label><input type="radio" name="question12" value="2"> Raramente</label>
+                <label><input type="radio" name="question12" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question12" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question12" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 13-->
+            <div>
+                <p>13. ¿Con qué frecuencia te sientes irritable o de mal humor debido a tus responsabilidades académicas?</p>
+                <label><input type="radio" name="question13" value="1"> Nunca</label>
+                <label><input type="radio" name="question13" value="2"> Raramente</label>
+                <label><input type="radio" name="question13" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question13" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question13" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 14-->
+            <div>
+                <p>14. ¿Qué tan a menudo experimentas tristeza o depresión debido a la carga académica?</p>
+                <label><input type="radio" name="question14" value="1"> Nunca</label>
+                <label><input type="radio" name="question14" value="2"> Raramente</label>
+                <label><input type="radio" name="question14" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question14" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question14" value="5"> Siempre</label>
+            </div>
+
+            <h2>Afrontamiento</h2>
+            <!--Pregunta 15-->
+            <div>
+                <p>15. ¿Con qué frecuencia intentas organizar tu tiempo para manejar mejor tus responsabilidades académicas?</p>
+                <label><input type="radio" name="question15" value="1"> Nunca</label>
+                <label><input type="radio" name="question15" value="2"> Raramente</label>
+                <label><input type="radio" name="question15" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question15" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question15" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 16-->
+            <div>
+                <p>16. ¿Qué tan frecuentemente buscas apoyo en tus compañeros de clase cuando te sientes abrumado(a)?</p>
+                <label><input type="radio" name="question16" value="1"> Nunca</label>
+                <label><input type="radio" name="question16" value="2"> Raramente</label>
+                <label><input type="radio" name="question16" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question16" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question16" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 17-->
+            <div>
+                <p>17. ¿Qué tan a menudo practicas alguna actividad física para manejar el estrés académico?</p>
+                <label><input type="radio" name="question17" value="1"> Nunca</label>
+                <label><input type="radio" name="question17" value="2"> Raramente</label>
+                <label><input type="radio" name="question17" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question17" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question17" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 18-->
+            <div>
+                <p>18. ¿Con qué frecuencia tomas descansos durante el estudio para aliviar el estrés?</p>
+                <label><input type="radio" name="question18" value="1"> Nunca</label>
+                <label><input type="radio" name="question18" value="2"> Raramente</label>
+                <label><input type="radio" name="question18" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question18" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question18" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 19-->
+            <div>
+                <p>19. ¿Qué tan frecuentemente intentas técnicas de relajación como la meditación para reducir el estrés académico?</p>
+                <label><input type="radio" name="question19" value="1"> Nunca</label>
+                <label><input type="radio" name="question19" value="2"> Raramente</label>
+                <label><input type="radio" name="question19" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question19" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question19" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 20-->
+            <div>
+                <p>20. ¿Con qué frecuencia hablas con tus profesores sobre tus preocupaciones académicas para buscar orientación?</p>
+                <label><input type="radio" name="question20" value="1"> Nunca</label>
+                <label><input type="radio" name="question20" value="2"> Raramente</label>
+                <label><input type="radio" name="question20" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question20" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question20" value="5"> Siempre</label>
+            </div>
+            <!--Pregunta 21-->
+            <div>
+                <p>21. ¿Qué tan a menudo evitas pensar en tus problemas académicos como estrategia para reducir el estrés?</p>
+                <label><input type="radio" name="question21" value="1"> Nunca</label>
+                <label><input type="radio" name="question21" value="2"> Raramente</label>
+                <label><input type="radio" name="question21" value="3"> Ocasionalmente</label>
+                <label><input type="radio" name="question21" value="4"> Frecuentemente</label>
+                <label><input type="radio" name="question21" value="5"> Siempre</label>
+            </div>
+
+                <button type="button" onclick="calculateTotal()"> Enviar</button>
+        </form>
+    </div>
+
+    <!--fondo de superposicion-->
+    <div id="overlay" class="hidden"></div>
+
+    <!--ventana de resultados-->
+    <div id="resultWindow" class="hidden">
+        <p id="totalScore"></p>
+        <button id="finalizar" onclick="finalizarcuestionario()">Finalizar</button>
+    </div>
+
+    
+
+    <script src="/Pagina Test/scripttest.js"></script>
+</body>
+</html>

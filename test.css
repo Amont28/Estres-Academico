@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 50px;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Asegurar que el menú esté posicionado debajo */
+    background: linear-gradient(135deg, #0ba0eb, #525ab6);
+}
+
+.logo {
+    font-size: 35px;
+    color: #eee;
+    letter-spacing: 1px;
+}
+
+.toggle {
+    display: none; /* Ocultar por defecto */
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+.nav-bar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #eee;
+    transition: .5s;
+    font-size: 20px;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #888;
+    border-bottom: 3px solid #eee;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 800px) {
+    .toggle {
+        display: block;
+        z-index: 1;
+    }
+    .nav-bar {
+        position: absolute;
+        width: 100vw;
+        height: 0; /* Ocultar por defecto */
+        top: 100%; /* Desplegar debajo del header */
+        left: 0;
+        background: #165481f0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1; /* Asegurar que esté detrás del header */
+    }
+    .nav-bar ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-bar ul li {
+        width: 100%;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        display: block;
+        padding: 10px;
+    }
+    .nav-bar.active {
+        height: 150px; /* Ajusta según el tamaño necesario */
+    }
+}
+
+/* Estilos generales */
+/* Ajustes para pantallas pequeñas */
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        margin: 20px; /* Ajustar margen para pantallas pequeñas */
+        padding: 20px; /* Ajustar padding para pantallas pequeñas */
+    }
+
+    section {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        width: 100%; /* Usar el 100% del ancho disponible */
+        height: auto; /* Ajustar la altura automáticamente */
+        margin: 0; /* Eliminar márgenes */
+        border: none;
+    }
+
+    .estres, .testestres {
+        width: 100%; /* Usar el 100% del ancho disponible */
+        height: auto; /* Ajustar la altura automáticamente */
+        margin: 10px 0; /* Ajustar el margen superior/inferior */
+    }
+
+    .testestres {
+        margin-right: 0; /* Asegurar que no haya margen derecho */
+    }
+
+    h1, h2 {
+        font-size: 24px; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+
+    p {
+        font-size: 14px; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .testbtn {
+        width: 100%; /* Hacer el botón responsivo en pantallas pequeñas */
+        padding: 10px; /* Ajustar padding */
+    }
+}
+
+
+/* Estilo para el contenedor principal */
+.container {
+    position:absolute;
+    background-color: eee; /* Fondo blanco */
+    padding: 30px 50px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgb(34, 34, 78); /* Sombra para profundidad */
+    width: 100%; /* Ancho ajustable */
+    max-width: 700px; /* Ancho máximo */
+    margin: 100px auto; /* Margen vertical para separación */
+    font-size: 20px;
+}
+
+
+/* Estilo para el título principal (ahora en .header) */
+h1 {
+    font-family:sans-serif;
+    margin: 0; /* Sin margen para ajuste */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2.2em; /* Tamaño de fuente */
+    width: 100%;
+    color: #223;
+    text-align: center;
+}
+
+/* Estilo para el subtítulo */
+h2 {
+    text-align: center; /* Centrado */
+    font-size: 1.5em;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    margin-top: 10px; /* Margen superior */
+    border-bottom: 2px solid #0ba0eb;
+    
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Columnas para el contenido */
+    
+}
+
+/* Estilo para el fieldset */
+div {
+    border: none; /* Sin borde */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el legend */
+legend {
+
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 10px;; /* Espaciado inferior */
+    padding-top: 18px;
+    
+}
+
+/* Estilo para los párrafos */
+p {
+    margin: 0 0px 20px 0; /* Margen inferior */
+    font-weight: bold;
+    font-size:medium;
+    padding-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block; /* Cada opción en una línea */
+    margin-bottom: 10px; /* Espaciado inferior */
+    font-size:medium;
+}
+
+input[type="radio"] {
+    margin: 0px 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #121212;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked{
+    background: linear-gradient(135deg, #0ba0eb, #057ab5);
+    box-shadow: 0 0 5px #223;
+}
+
+/* Estilo para el botón */
+button {
+    margin-top: 20px;
+    padding: 10px; /* Espaciado interno */
+    background: linear-gradient(135deg, #0ba0eb, #1f2785); /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilo para el botón al pasar el ratón */
+button:hover {
+    background: linear-gradient(135deg, #0ba0eb, #525ab6);
+}
+
+.hidden {
+    display: none;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0001;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+#resultWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid #223;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0003;
+    width: 500px;
+    text-align: center;
+    z-index: 20; /* Asegura que esté por encima del overlay */
+    pointer-events: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #007bff;
+    z-index: 30; /* Asegura que el botón de cierre esté por encima de todo */
+    pointer-events: auto;
+
+.close:hover {
+    color: #0056b3;
+}
+}
+
+
+@media screen and (max-width: 800px) {
+.container{
+    width: 95%;
+}
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+p{
+    font-size: 15px;
+}
+
+label{
+    font-size: 15px;
+}
+
+input[type="radio"] {
+    margin: 0px 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #121212;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+#resultWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid #223;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0003;
+    width: 300px;
+    text-align: center;
+    z-index: 20; /* Asegura que esté por encima del overlay */
+    pointer-events: auto;
+}
+
+}
