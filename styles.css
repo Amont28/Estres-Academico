@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 50px;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Asegurar que el menú esté posicionado debajo */
+    background: linear-gradient(135deg, #0ba0eb, #525ab6);
+}
+.logo {
+    font-size: 35px;
+    color: #eee;
+    letter-spacing: 1px;
+}
+.toggle {
+    display: none; /* Ocultar por defecto */
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+}
+.nav-bar {
+    display: flex;
+}
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar ul li {
+    list-style: none;
+    padding: 0 15px;
+}
+.nav-bar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    font-size: 20px;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+}
+.nav-bar ul li a:hover {
+    color: white;
+    border-bottom: 3px solid #eee;
+}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 800px) {
+    .toggle {
+        display: block;
+        z-index: 1;
+    }
+    .nav-bar {
+        position: absolute;
+        width: 100vw;
+        height: 0; /* Ocultar por defecto */
+        top: 100%; /* Desplegar debajo del header */
+        left: 0;
+        background: #165481f0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 0; /* Asegurar que esté detrás del header */
+    }
+    .nav-bar ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-bar ul li {
+        width: 100%;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        display: block;
+        padding: 10px;
+    }
+    .nav-bar.active {
+        height: 150px; /* Ajusta según el tamaño necesario */
+    }
+}
+/* Estilos generales */
+main {
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 30px;
+    padding: 30px;
+}
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 1200px; /* Mantener el ancho original */
+    height: 450px; /* Mantener la altura original */
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden; /* Evitar desbordamiento */
+}
+.estres, .testestres, sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    width: 600px; /* Mantener el ancho original */
+    height: 300px; /* Mantener la altura original */
+}
+.estres {
+    background: transparent;
+}
+.testestres {
+    color: white;
+    background: linear-gradient(135deg, #0ba0eb, #525ab6);
+    height: 420px; /* Mantener la altura original */
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.logo-form{
+    margin: 20px;
+    height: 80px;
+    width: 80px;
+}
+
+.iconos{
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+}
+/* Estilos específicos de texto y botones */
+h1, h2, p {
+    font-family: sans-serif;
+}
+h1 {
+    color: #223;
+    font-size: 40px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0ba0eb;
+}
+h2 {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+p {
+    font-size: 16px;
+    text-align: justify;
+    padding: 20px;
+}
+.EstresAcademico{
+    color: #223;
+}
+
+.info-test{
+    margin-top: -10px;
+}
+
+.P-acadecico{
+    margin: 10px 80px 80px 80px;
+}
+.testbtn, .moreinfobtn  {
+    font-family: sans-serif;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 10px 50px; 
+    background: #f9f9f9;
+}
+.testbtn:hover {
+    background: white;
+    box-shadow: 0 0 5px white;
+    cursor: pointer;
+    border: 2px solid #0ba0eb ;
+}
+.moreinfobtn:hover {
+    background: white;
+    box-shadow: 0 0 5px white;
+    cursor: pointer;
+    border: 2px solid #0ba0eb ;
+}
+.moreinfo{
+    background-color: transparent;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+.section2{
+    display: flex;
+    flex-direction:row;
+    margin: auto;
+    background: transparent;
+    height: 400px;
+    width: 90%;
+}
+.element1, .element2, .element3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0ba0eb, #525ab6);
+    padding: auto;
+    margin: auto;
+    height: 90%;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    align-content: center;
+}
+
+
+.p-sintomas, .p-causas, .p-recomendaciones{
+    color: #eee;
+}
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        margin: 10px; /* Ajustar margen para pantallas pequeñas */
+        padding: 20px; /* Ajustar padding para pantallas pequeñas */
+    }
+    .section1 {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        width: 100%; /* Usar el 100% del ancho disponible */
+        height: auto; /* Ajustar la altura automáticamente */
+        margin: 0; /* Eliminar márgenes */
+        border: none;
+    }
+    .estres, .testestres {
+        width: 90%; /* Usar el 100% del ancho disponible */
+        height: auto; /* Ajustar la altura automáticamente */
+        margin: 10px; /* Ajustar el margen superior/inferior */
+    }
+
+    .testestres {
+        margin-right: 0px; /* Asegurar que no haya margen derecho */
+        padding-top: 10px;
+    }
+
+    h1, h2 {
+        font-size: 24px; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+
+    p {
+        font-size: 14px; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .testbtn {
+        width: 50%; /* Hacer el botón responsivo en pantallas pequeñas */
+        padding: 10px; /* Ajustar padding */
+        margin-bottom: 10px;
+    }
+
+    .section2{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        background: transparent;
+        height: 500px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .element1, .element2, .element3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #0ba0eb;
+        padding: 20px;
+        margin: auto;
+        margin-top: 20px;
+        height: 90%;
+        width: 80%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px black;
+        align-content: center;
+    }
+
+    .moreinfo{
+        background-color: transparent;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 25px;
+    }
+
+    .P-acadecico{
+        margin: 0 30px;
+        padding-bottom: 50px;
+    }
+
+
+}
+
+/* General footer styling */
+footer {
+    margin-top: 100px;
+    background-color: #ccc;
+    color: black;
+    padding: 5px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+  /* Styling for each paragraph */
+footer p {
+    margin: 1px 0;
+    font-size: 1em;
+    line-height: 0.5;
+}
+
+  /* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        margin-top: 670px;
+        background-color: #ccc;
+        color: black;
+        padding: 5px 0px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+    }
+    
+    .footer-container {
+        max-width: 800px;
+        margin: 5px;
+        padding: 0 1px;
+    }
+
+    footer p {
+        margin: 1px 0;
+        font-size: 1em;
+        line-height: 0.1;
+    }
+}
+
+/* Botón Volver al Inicio */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF; /* Color del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+}
+
+
+
